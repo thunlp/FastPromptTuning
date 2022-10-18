@@ -18,7 +18,7 @@ If you use the code, please cite the following paper:
 ![model](./figs/model.png)
 
 In this work, we proppose Fast
-Prompt Tuning (FPT), which starts by conducting PT using a small-scale partial PLM, then progressively expands its depth and width until the full-model size. By using FPT, we can save over 30% training computations while achieving comparable performance with vanilla Prompt Tuning. You can find more details in our [paper]
+Prompt Tuning (FPT), which starts by conducting PT using a small-scale partial PLM, then progressively expands its depth and width until the full-model size. By using FPT, we can save over 30% training computations while achieving comparable performance with vanilla Prompt Tuning. You can find more details in our paper.
 
 ## Requirments
 + Python: 3.8.12
@@ -28,6 +28,10 @@ torch==1.11.0
 transformers==4.13.0
 numpy==1.21.4
 ptflops==0.6.7
+```
+To set up the dependencies, you can run the following command:
+```
+pip install -r requirements.txt
 ```
 Note that you should install the correct version of PyTorch that matches your CUDA version. See [PyTorch official website](https://pytorch.org/) for instructions.
 
@@ -54,7 +58,7 @@ bash data/download.sh $dataset_name1 $dataset_name2 ...
 where $dataset_nameX can be one or multiple of mnli, qqp, record, squad2, xsum.
 
 ## Experiments
-If you download pretrained language models from [Huggingface Models](https://huggingface.co/google/t5-large-lm-adapt), you need to specify the path of downloaded models in shell files.
+If you download pretrained language models from [Huggingface Models](https://huggingface.co/google/t5-large-lm-adapt), you need to specify the path of downloaded models in scripts files.
 
 ### Get activation scores
 Before experiments, we need to compute activation scores of each neurons in pretrianed language models. It will generate activation scores of all tasks on both LARGE and XL models. The score will be stored in directory `scores`.
@@ -63,6 +67,7 @@ bash scripts/score-all-task.sh
 ```
 
 ### Prompt Tuning on a Partial PLM
+![Table1](./figs/Table1.png)
 To get experiments results in Table 1 of our paper, you need follow the commands below.
 1. For MNLI-m
 ```shell
@@ -86,6 +91,7 @@ bash scripts/partial_plm/run_xsum.sh
 ```
 
 ### Fast Prompt Tuning
+![Table2](./figs/Table2.png)
 To get experiments results in Table 2 of our paper, you need follow the commands below.
 1. For MNLI-m
 ```shell
