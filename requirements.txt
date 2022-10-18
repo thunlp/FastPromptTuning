@@ -1,0 +1,6 @@
+transformers==4.13.0
+numpy==1.21.4
+ptflops==0.6.7
+sentencepiece==0.1.97
+sklearn
+tensorboard

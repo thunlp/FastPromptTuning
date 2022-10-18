@@ -1,0 +1,14 @@
+logs/
+checkpoints/
+data/mnli
+data/qqp
+data/record
+data/squad2
+data/xsum
+scores
+.vscode
+src/__pycache__
+src/knowledge_neurons/__pycache__
+src/rouge/__pycache__
+src/t5/__pycache__
+src/tasks/__pycache__
