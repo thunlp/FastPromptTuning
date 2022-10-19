@@ -1,6 +1,6 @@
 # FPT: Improving Prompt Tuning Efficiency via Progressive Training
 
-The code and datasets of our paper "FPT: Improving Prompt Tuning Efficiency via Progressive Training"
+This is the official PyTorch implementation for Findings of EMNLP 2022 paper "FPT: Improving Prompt Tuning Efficiency via Progressive Training"
 
 If you use the code, please cite the following paper:
 
@@ -28,6 +28,8 @@ torch==1.11.0
 transformers==4.13.0
 numpy==1.21.4
 ptflops==0.6.7
+sklearn
+tensorboard
 ```
 To set up the dependencies, you can run the following command:
 ```
