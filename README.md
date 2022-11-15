@@ -3,6 +3,14 @@
 This is the official PyTorch implementation for Findings of EMNLP 2022 paper "FPT: Improving Prompt Tuning Efficiency via Progressive Training"
 
 If you use the code, please cite the following paper:
+```
+@inproceedings{huang2022fpt,
+  title={{FPT}: Improving Prompt Tuning Efficiency via Progressive Training},
+  author={Huang, Yufei and Qin, Yujia and Wang, Huadong and Yin, Yichun and Sun, Maosong and Liu, Zhiyuan and Liu, Qun},
+  booktitle={Findings of EMNLP 2022},
+  year={2022}
+}
+```
 
 ## Quick Links
 
